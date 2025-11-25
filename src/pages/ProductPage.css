@@ -215,7 +215,187 @@
   height: 100%;
   object-fit: contain;
 }
+/* FIX: Make dropdowns appear on top */
+.header,
+.nav,
+.menu-item,
+.dropdown,
+.nested-menu {
+  position: relative;
+  z-index: 9999;
+}
 
+/* MAIN DROPDOWN BOX */
+.dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #111; /* darker solid background */
+  padding: 10px 0;
+  border-radius: 8px;
+  min-width: 220px;
+  border: 1px solid #2b2b2b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 99999; /* highest priority */
+}
+
+/* DROPDOWN CONTENT */
+.dropdown p,
+.dropdown a {
+  padding: 12px 20px;
+  color: #f2f2f2;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.dropdown a:hover,
+.dropdown p:hover {
+  background: #d4a45a;
+  color: #111;
+}
+
+/* NESTED DROPDOWN (SECOND LAYER) */
+.nested-menu {
+  position: absolute;
+  top: 0;
+  left: 220px; /* moves right side */
+  background: #111;
+  min-width: 220px;
+  border-radius: 8px;
+  padding: 10px 0;
+  border: 1px solid #2b2b2b;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+  z-index: 100000;
+}
+
+.nested-menu a {
+  padding: 12px 20px;
+  color: #f2f2f2;
+}
+
+.nested-menu a:hover {
+  background: #d4a45a;
+  color: #111;
+}
+
+/* MENU ITEM CONTAINER */
+.menu-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* BUTTON NEXT TO TEXT */
+.menu-item .arrow {
+  background: none;
+  border: none;
+  color: #d4a45a;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* PREVENT OVERLAP UNDER HEADER */
+.header {
+  position: relative;
+  z-index: 1000000;
+}
+/* Hero Section */
+.hero-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 40px;
+  margin-bottom: 60px;
+}
+
+.availability-badge {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.availability-badge p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.platform-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.platform-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #d4af37;
+  margin: 0;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.hero-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hero-images-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .platform-logos {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 
 

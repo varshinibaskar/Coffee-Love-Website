@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./ContactUs.css";
 
 const branches = [
-  { name: "Chennai ", address: "123 Coffee Street, Anna Nagar, Chennai - 600040" },
-  { name: "Coimbatore ", address: "45 Aroma Road, Gandhipuram, Coimbatore - 641012" },
-  { name: "Bangalore ", address: "22 Brew Park, Indiranagar, Bangalore - 560038" },
-  { name: "Hyderabad ", address: "88 Roast Lane, Banjara Hills, Hyderabad - 500034" },
-  { name: "Mumbai ", address: "88 Roast Lane, Banjara , Mumbai - 500034" },
-  { name: "Pune ", address: "88 Roast Lane, Banjara Hills, Pune - 500034" },
-  { name: "New Delhi ", address: "183, Red fort, New Delhi - 500034" },
-  { name: "Kolkata ", address: "88 Roast Lane, Banjara , Mumbai - 500034" },
+  { name: "Chennai", address: "123 Coffee Street, Anna Nagar, Chennai - 600040" },
+  { name: "Coimbatore", address: "45 Aroma Road, Gandhipuram, Coimbatore - 641012" },
+  { name: "Bangalore", address: "22 Brew Park, Indiranagar, Bangalore - 560038" },
+  { name: "Hyderabad", address: "88 Roast Lane, Banjara Hills, Hyderabad - 500034" },
+  { name: "Mumbai", address: "98 Bean Lane, Andheri West, Mumbai - 400053" },
+  { name: "Pune", address: "72 Aroma Valley, Kothrud, Pune - 411038" },
+  { name: "New Delhi", address: "183, Red Fort Road, New Delhi - 110006" },
+  { name: "Kolkata", address: "56 Brew Market, Salt Lake, Kolkata - 700091" },
 ];
 
 const ContactUs = () => {
@@ -28,7 +28,7 @@ const ContactUs = () => {
     >
       <div className="content-wrapper">
 
-        {/* FORM */}
+        {/* ENQUIRY FORM */}
         <div className="form-section">
           <h2>Enquiry Form</h2>
 
@@ -39,18 +39,18 @@ const ContactUs = () => {
 
             <select required>
               <option value="">Product Type*</option>
-              <option>Coffee Beans</option>
-              <option>Coffee Powder</option>
-              <option>Coffee Machine</option>
+              <option value="beans">Coffee Beans</option>
+              <option value="powder">Coffee Powder</option>
+              <option value="machine">Coffee Machine</option>
             </select>
 
             <textarea rows="3" placeholder="Message"></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" className="submit-btn">Submit</button>
           </form>
         </div>
 
-        {/* HORIZONTAL CONTACT INFO */}
+        {/* CONTACT INFORMATION BOXES */}
         <div className="info-row">
           <div>
             <h4>MOBILE</h4>
@@ -68,7 +68,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* BRANCHES */}
+        {/* BRANCH SLIDER */}
         <h3 className="branches-title">Branches</h3>
 
         <div className="branch-slider-row">
@@ -89,6 +89,7 @@ const ContactUs = () => {
           <button className="arrow-btn" onClick={nextBranch}>❯</button>
         </div>
 
+        {/* ADDRESS DISPLAY */}
         <div className="address-box">
           <h4>{branches[current].name}</h4>
           <p>{branches[current].address}</p>

@@ -1,29 +1,38 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
+import AutomaticMachines from "./pages/AutomaticMachines";
+import SemiAutomaticMachines from "./pages/SemiAutomaticMachines";
+import HomeMachines from "./pages/HomeMachines";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="site">
         <Header />
-        
+
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/contact" element={<ContactUs />} />
+
+            {/* subcategory pages */}
+            <Route path="/automatic-machines" element={<AutomaticMachines />} />
+            <Route path="/semi-automatic-machines" element={<SemiAutomaticMachines />} />
+            <Route path="/home-machines" element={<HomeMachines />} />
+
+            {/* contact page */}
+            <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </main>
 
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

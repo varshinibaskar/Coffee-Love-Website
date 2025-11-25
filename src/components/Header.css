@@ -1,8 +1,9 @@
+/* ---------------- HEADER ---------------- */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #3b2f2f;
+  background: #3b2f2f;   /* main background */
   padding: 12px 35px;
 }
 
@@ -20,48 +21,93 @@
 .menu-item {
   position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
+/* ---------------- MAIN DROPDOWN — FULLY MERGED ---------------- */
 .dropdown {
   position: absolute;
-  top: 25px;
+  top: 45px;
   left: 0;
-  background: white;
-  color: black;
-  padding: 10px;
-  min-width: 180px;
-  border-radius: 5px;
-  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  background: #3b2f2f;   /* EXACT header background */
+  padding: 10px 0;
+  min-width: 240px;
+  border-radius: 0;
+  box-shadow: none;       /* fully blended */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 1000;
 }
 
-.dropdown p {
-  margin: 8px 0;
-  cursor: pointer;
+.dropdown p,
+.dropdown a {
+  padding: 10px 20px;
+  color: #ffe4c7;         /* warm light text for contrast */
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
 }
 
+.dropdown a:hover,
 .dropdown p:hover {
-  background: #f0f0f0;
+  background: rgba(0, 0, 0, 0.25);  /* DARK hover, not white */
 }
 
+/* ---------------- SUB MENU (ALSO FULLY MERGED) ---------------- */
 .nested {
-  position: relative;
-  cursor: pointer;
+  padding: 12px 20px;
+  font-weight: 700;
+  color: #ffd5a1;   /* strong bold visible */
 }
 
+/* nested submenu merged with header color */
 .nested-menu {
-  position: absolute;
-  top: 0;
-  left: 180px;
+  position: relative;
+  margin-left: 20px;
+  background: #3b2f2f;   /* SAME color to merge fully */
+  padding: 10px 0;
+  border-left: 2px solid #a78967;  /* subtle highlight line */
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
-.header a {
-  color: white;            
+
+.nested-menu a {
+  padding: 8px 25px;
+  display: block;
+  color: #ffe8d2;       /* bright readable text */
+  font-weight: 600;
   text-decoration: none;
 }
 
-.header a:visited {
-  color: white;              
+.nested-menu a:hover {
+  background: rgba(0, 0, 0, 0.25); /* dark hover */
 }
+
+/* ---------------- LINKS ---------------- */
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
 .header a:hover {
-  color: #f2b37a;            
+  color: #f2b37a;
 }
+
+/* Arrow button */
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffe4c7;
+}
+
+
+
 

@@ -85,6 +85,47 @@ const ProductPage = () => {
         </div>
       </div>
 
+      {/* ---- HERO SECTION ---- */}
+      <section className="hero-section">
+        <div className="availability-badge">
+          <p>AVAILABLE ON AMAZON AND FLIPKART.</p>
+          <div className="platform-logos">
+            <img src="/images/amazon logo.png" alt="Amazon" className="platform-logo" />
+            <img src="/images/flipkart logo.png" alt="Flipkart" className="platform-logo" />
+          </div>
+        </div>
+
+        <div className="hero-content">
+          <div className="hero-image">
+            <img src="/images/coffee_beans.jpg" alt="Coffee Beans" />
+          </div>
+
+          <div className="hero-text">
+            <h1 className="hero-title">Coffee Product</h1>
+            <p className="hero-description">
+              We handle everything—from processing coffee beans to training individuals in professional brewing techniques. After all, creating the perfect cup of coffee is an art that demands proper knowledge and practical experience, which can only be gained through expert guidance. Our skilled staff and trainees play a vital role in ensuring that every cup of coffee is brewed to perfection.
+
+            </p>
+
+            <div className="hero-images-grid">
+              <img src="/images/coffee_cup.jpg" alt="Coffee Cup with Beans" />
+              <img src="/images/Roasting_bean.jpg" alt="Roasting Coffee" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ---- MAIN HEADING ---- */}
+      <h1 className="main-title">OUR PRODUCTS</h1>
+
+      {/* ---- TOP NAV ---- */}
+      <div className="sub-menu">
+        <a href="#machines">Our Machines</a>
+        <a href="#powders">Our Powders</a>
+        <a href="#beans">Our Beans</a>
+        <a href="#partner">Our Partner</a>
+      </div>
+
       {/* ------------------ OUR POWDERS ------------------ */}
       <h2 className="section-title" id="powders">Our Powders</h2>
       <div className="machine-grid">

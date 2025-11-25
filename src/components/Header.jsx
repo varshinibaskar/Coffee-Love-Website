@@ -1,24 +1,36 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";   // ✅ Added
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-  const [mainMenu, setMainMenu] = useState(null);
-  const [subMenu, setSubMenu] = useState(null);
+  const [openMenu, setOpenMenu] = useState(null);
+  const [openSubMenu, setOpenSubMenu] = useState(null);
 
-  const toggleMain = (menu) => {
-    setMainMenu(mainMenu === menu ? null : menu);
-    setSubMenu(null);
+  // Close when clicking outside
+  useEffect(() => {
+    const handleClickOutside = () => {
+      setOpenMenu(null);
+      setOpenSubMenu(null);
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
+  const toggleMain = (menu, e) => {
+    e.stopPropagation();
+    setOpenMenu(openMenu === menu ? null : menu);
+    setOpenSubMenu(null);
   };
 
-  const toggleSub = (menu) => {
-    setSubMenu(subMenu === menu ? null : menu);
+  const toggleSub = (sub, e) => {
+    e.stopPropagation();
+    setOpenSubMenu(openSubMenu === sub ? null : sub);
   };
 
   return (
-    <header className="header">
+    <header className="header" onClick={(e) => e.stopPropagation()}>
       <div className="logo">
-        <Link to="/">                     {/* ✅ Added Link */}
+        <Link to="/">
           <img src="/logo.png" alt="Coffee Logo" />
         </Link>
       </div>
@@ -26,9 +38,11 @@ const Header = () => {
       <nav className="nav">
 
         {/* HOME */}
-        <div className="menu-item" onClick={() => toggleMain("home")}>
-          <Link to="/">Home ▼</Link>       {/* ✅ Added Link */}
-          {mainMenu === "home" && (
+        <div className="menu-item">
+          <Link to="/">Home</Link>
+          <button className="arrow" onClick={(e) => toggleMain("home", e)}>▼</button>
+
+          {openMenu === "home" && (
             <div className="dropdown">
               <p>About Us</p>
               <p>What We Do</p>
@@ -37,23 +51,19 @@ const Header = () => {
         </div>
 
         {/* BUSINESS */}
-        <div className="menu-item" onClick={() => toggleMain("business")}>
-          Business ▼
-          {mainMenu === "business" && (
+        <div className="menu-item">
+          <span>Business</span>
+          <button className="arrow" onClick={(e) => toggleMain("business", e)}>▼</button>
+
+          {openMenu === "business" && (
             <div className="dropdown">
               <p>Food Services</p>
               <p>Office Coffee Solutions</p>
 
-              <div
-                className="nested"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleSub("consumer");
-                }}
-              >
+              <div className="nested" onClick={(e) => toggleSub("consumer", e)}>
                 Direct to Consumer ›
-                {subMenu === "consumer" && (
-                  <div className="dropdown nested-menu">
+                {openSubMenu === "consumer" && (
+                  <div className="nested-menu">
                     <p>Public Locations</p>
                     <p>E-Commerce</p>
                   </div>
@@ -64,43 +74,33 @@ const Header = () => {
         </div>
 
         {/* PRODUCTS */}
-        <div className="menu-item" onClick={() => toggleMain("products")}>
-          <Link to="/products">Products ▼</Link>   {/* ✅ Added Link */}
-          {mainMenu === "products" && (
+        <div className="menu-item">
+          <Link to="/products">Products</Link>
+          <button className="arrow" onClick={(e) => toggleMain("products", e)}>▼</button>
+
+          {openMenu === "products" && (
             <div className="dropdown">
 
               {/* Coffee Machines */}
-              <div
-                className="nested"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleSub("machines");
-                }}
-              >
+              <div className="nested" onClick={(e) => toggleSub("machines", e)}>
                 Coffee Machines ›
-                {subMenu === "machines" && (
-                  <div className="dropdown nested-menu">
-                    <p>Automatic Coffee Machines</p>
-                    <p>Semi-Automatic Coffee Machines</p>
-                    <p>Home Machines</p>
+                {openSubMenu === "machines" && (
+                  <div className="nested-menu">
+                    <Link to="/automatic-machines">Automatic Machines</Link>
+                    <Link to="/semi-automatic-machines">Semi Automatic Machines</Link>
+                    <Link to="/home-machines">Home Machines</Link>
                   </div>
                 )}
               </div>
 
               {/* Coffee Products */}
-              <div
-                className="nested"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleSub("coffee");
-                }}
-              >
+              <div className="nested" onClick={(e) => toggleSub("coffee", e)}>
                 Coffee Products ›
-                {subMenu === "coffee" && (
-                  <div className="dropdown nested-menu">
-                    <p>Coffee Beans</p>
-                    <p>Coffee Powder</p>
-                    <p>Pour Over Coffee</p>
+                {openSubMenu === "coffee" && (
+                  <div className="nested-menu">
+                    <Link to="/coffee-beans">Coffee Beans</Link>
+                    <Link to="/coffee-powder">Coffee Powder</Link>
+                    <Link to="/pour-over">Pour Over Coffee</Link>
                   </div>
                 )}
               </div>
@@ -110,21 +110,12 @@ const Header = () => {
           )}
         </div>
 
-        {/* TRAINING */}
-        <div className="menu-item" onClick={() => toggleMain("training")}>
-          Training Centres ▼
-          {mainMenu === "training" && (
-            <div className="dropdown">
-              <p>Coffee Terms</p>
-              <p>Gallery</p>
-            </div>
-          )}
-        </div>
-
         {/* MANUFACTURING */}
-        <div className="menu-item" onClick={() => toggleMain("manufacturing")}>
-          Manufacturing ▼
-          {mainMenu === "manufacturing" && (
+        <div className="menu-item">
+          <span>Manufacturing</span>
+          <button className="arrow" onClick={(e) => toggleMain("manufacturing", e)}>▼</button>
+
+          {openMenu === "manufacturing" && (
             <div className="dropdown">
               <p>Our Factory</p>
               <p>Research & Development</p>
@@ -132,14 +123,17 @@ const Header = () => {
           )}
         </div>
 
-        {/* CONTACT */}
-        <Link to="/contact" className="menu-item">Contact Us</Link>  
+        <Link to="/contact-us" className="menu-item">Contact Us</Link>
       </nav>
     </header>
   );
 };
 
 export default Header;
+
+
+
+
 
 
 
