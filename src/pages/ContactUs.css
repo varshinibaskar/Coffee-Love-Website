@@ -5,6 +5,10 @@
   background-size: cover;
   background-position: center;
   position: relative;
+
+  /* FIX: remove gap below header */
+  margin-top: -40px;
+
   padding: 40px 0;
   color: white;
 }

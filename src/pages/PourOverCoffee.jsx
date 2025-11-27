@@ -25,12 +25,12 @@ const CoffeeMachinesPage = () => {
       
       {/* Automatic Machines Section */}
       <section className="automatic-machines-section">
-        <h1 className="page-title">SEMI AUTOMATIC MACHINES</h1>
+        <h1 className="page-title">POUR OVER COFFEE</h1>
 
         <div className="machines-grid">
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm1.png" alt="Espresso Machine" />
+              <img src="/images/po1.png" alt="Espresso Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -41,7 +41,7 @@ const CoffeeMachinesPage = () => {
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm2.png" alt="Filter Coffee Machine" />
+              <img src="/images/po2.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -52,7 +52,7 @@ const CoffeeMachinesPage = () => {
         
         <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm3.png" alt="Filter Coffee Machine" />
+              <img src="/images/03.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -63,7 +63,7 @@ const CoffeeMachinesPage = () => {
           </div>
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm4.png" alt="Filter Coffee Machine" />
+              <img src="/images/04.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -74,7 +74,7 @@ const CoffeeMachinesPage = () => {
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm5.png" alt="Coffee Vending Machine" />
+              <img src="/images/o5.png" alt="Coffee Vending Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -84,8 +84,6 @@ const CoffeeMachinesPage = () => {
           </div>
         </div>
       </section>
-
-
 
       {/* Contact Section */}
       <section className="contact-section">

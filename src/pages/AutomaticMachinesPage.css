@@ -24,10 +24,11 @@
 .powder-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  gap: 50px;
   justify-items: center;
   align-items: start;
   width: 100%;
+  padding: 30px;
 }
 
 .machine-item {
@@ -38,6 +39,7 @@
   perspective: 1000px;
   width: 100%;
   max-width: 320px;
+  padding: 20px;
 }
 
 /* CARD BOX */
@@ -48,7 +50,7 @@
   height: 300px;
   background: #111;
   border-radius: 12px;
-  padding: 25px;
+  padding: 50px;
   border: 1px solid #222;
   box-shadow: 0 4px 15px rgba(255, 215, 130, 0.05);
   display: flex;
@@ -147,7 +149,7 @@
 .contact-section {
   padding: 80px 5%;
   text-align: center;
-  background-color: #0d0d0d;
+  background-color: #0e0d0d;
   width: 100%;
 }
 

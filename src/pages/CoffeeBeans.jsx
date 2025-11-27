@@ -25,14 +25,14 @@ const CoffeeMachinesPage = () => {
       
       {/* Automatic Machines Section */}
       <section className="automatic-machines-section">
-        <h1 className="page-title">SEMI AUTOMATIC MACHINES</h1>
+        <h1 className="page-title">COFFEE BEANS</h1>
 
         <div className="machines-grid">
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm1.png" alt="Espresso Machine" />
+              <img src="/images/b1.png" alt="Espresso Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee beans are carefully harvested seeds of the coffee cherry, known for their rich aroma and bold flavor.Each bean carries unique notes shaped by its origin, roast level, and processing method.From earthy and chocolatey to fruity and bright, coffee beans define the soul of every perfect cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
@@ -41,9 +41,9 @@ const CoffeeMachinesPage = () => {
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm2.png" alt="Filter Coffee Machine" />
+              <img src="/images/b2.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee beans are carefully harvested seeds of the coffee cherry, known for their rich aroma and bold flavor.Each bean carries unique notes shaped by its origin, roast level, and processing method.From earthy and chocolatey to fruity and bright, coffee beans define the soul of every perfect cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
@@ -52,31 +52,21 @@ const CoffeeMachinesPage = () => {
         
         <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm3.png" alt="Filter Coffee Machine" />
+              <img src="/images/b3.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee beans are carefully harvested seeds of the coffee cherry, known for their rich aroma and bold flavor.Each bean carries unique notes shaped by its origin, roast level, and processing method.From earthy and chocolatey to fruity and bright, coffee beans define the soul of every perfect cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
 
             <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
           </div>
-          <div className="machine-item">
-            <div className="machine-image-box">
-              <img src="/images/hm4.png" alt="Filter Coffee Machine" />
-              <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
-            <button className="order-btn">Order Now</button>
-            </div>
-            </div>
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
-          </div>
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm5.png" alt="Coffee Vending Machine" />
+              <img src="/images/b4.png" alt="Coffee Vending Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee beans are carefully harvested seeds of the coffee cherry, known for their rich aroma and bold flavor.Each bean carries unique notes shaped by its origin, roast level, and processing method.From earthy and chocolatey to fruity and bright, coffee beans define the soul of every perfect cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>

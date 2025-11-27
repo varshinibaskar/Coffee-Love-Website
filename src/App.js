@@ -8,8 +8,13 @@ import AutomaticMachines from "./pages/AutomaticMachines";
 import SemiAutomaticMachines from "./pages/SemiAutomaticMachines";
 import HomeMachines from "./pages/HomeMachines";
 import ManufacturingPage from "./pages/Manufacturing";
-import FactoryPage from "./pages/FactoryPage"; // Import the new Factory page
+import FactoryPage from "./pages/FactoryPage";
+import ResearchDevelopmentPage from "./pages/ResearchDevelopmentPage"; 
 import Footer from "./components/Footer";
+import CoffeeBeans from "./pages/CoffeeBeans";
+import CoffeePowder from "./pages/CoffeePowder";
+import PourOverCoffee from "./pages/PourOverCoffee";
+import CoffeeAccessories from "./pages/CoffeeAccessories";
 
 export default function App() {
   return (
@@ -24,13 +29,15 @@ export default function App() {
           <Route path="/automatic-machines" element={<AutomaticMachines />} />
           <Route path="/semi-automatic-machines" element={<SemiAutomaticMachines />} />
           <Route path="/home-machines" element={<HomeMachines />} />
+          <Route path="/coffee-beans" element={<CoffeeBeans />} />
+          <Route path="/coffee-powder" element={<CoffeePowder />} />
+          <Route path="/pour-over-coffee" element={<PourOverCoffee />} />
+          <Route path="/coffee-accessories" element={<CoffeeAccessories />} />
 
-          {/* Both Manufacturing and Factory routes */}
+          {/* Manufacturing, Factory, and R&D routes */}
           <Route path="/manufacturing" element={<ManufacturingPage />} />
           <Route path="/factory" element={<FactoryPage />} />
-          
-          {/* Or use the same component for both routes */}
-          {/* <Route path="/factory" element={<ManufacturingPage />} /> */}
+          <Route path="/research-development" element={<ResearchDevelopmentPage />} />
 
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
@@ -40,5 +47,4 @@ export default function App() {
     </div>
   );
 }
-
 

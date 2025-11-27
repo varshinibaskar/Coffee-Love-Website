@@ -25,12 +25,12 @@ const CoffeeMachinesPage = () => {
       
       {/* Automatic Machines Section */}
       <section className="automatic-machines-section">
-        <h1 className="page-title">SEMI AUTOMATIC MACHINES</h1>
+        <h1 className="page-title">COFFEE POWDER</h1>
 
         <div className="machines-grid">
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm1.png" alt="Espresso Machine" />
+              <img src="/images/p1.png" alt="Espresso Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -41,7 +41,18 @@ const CoffeeMachinesPage = () => {
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm2.png" alt="Filter Coffee Machine" />
+              <img src="/images/p2.png" alt="Filter Coffee Machine" />
+              <div className="machine-back">
+            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <button className="order-btn">Order Now</button>
+            </div>
+            </div>
+            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+          </div>
+
+          <div className="machine-item">
+            <div className="machine-image-box">
+              <img src="/images/p3.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -50,9 +61,10 @@ const CoffeeMachinesPage = () => {
             <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
           </div>
         
+        
         <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm3.png" alt="Filter Coffee Machine" />
+              <img src="/images/p4.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>
@@ -61,20 +73,10 @@ const CoffeeMachinesPage = () => {
 
             <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
           </div>
-          <div className="machine-item">
-            <div className="machine-image-box">
-              <img src="/images/hm4.png" alt="Filter Coffee Machine" />
-              <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
-            <button className="order-btn">Order Now</button>
-            </div>
-            </div>
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
-          </div>
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/hm5.png" alt="Coffee Vending Machine" />
+              <img src="/images/p5.png" alt="Coffee Vending Machine" />
               <div className="machine-back">
             <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
             <button className="order-btn">Order Now</button>

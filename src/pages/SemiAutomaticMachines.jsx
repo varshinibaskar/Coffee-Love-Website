@@ -26,7 +26,6 @@ const CoffeeMachinesPage = () => {
       {/* Automatic Machines Section */}
       <section className="automatic-machines-section">
         <h1 className="page-title">SEMI AUTOMATIC MACHINES</h1>
-        <p className="subtitle">Bean to Cup Machines</p>
 
         <div className="machines-grid">
           <div className="machine-item">

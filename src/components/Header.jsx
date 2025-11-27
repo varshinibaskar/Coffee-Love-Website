@@ -6,7 +6,7 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
 
-  // Close when clicking outside
+  // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = () => {
       setOpenMenu(null);
@@ -44,8 +44,8 @@ const Header = () => {
 
           {openMenu === "home" && (
             <div className="dropdown">
-              <p>About Us</p>
-              <p>What We Do</p>
+              <Link to="/about">About Us</Link>
+              <Link to="/what-we-do">What We Do</Link>
             </div>
           )}
         </div>
@@ -57,15 +57,15 @@ const Header = () => {
 
           {openMenu === "business" && (
             <div className="dropdown">
-              <p>Food Services</p>
-              <p>Office Coffee Solutions</p>
+              <Link to="/food-services">Food Services</Link>
+              <Link to="/office-coffee">Office Coffee Solutions</Link>
 
               <div className="nested" onClick={(e) => toggleSub("consumer", e)}>
                 Direct to Consumer ›
                 {openSubMenu === "consumer" && (
                   <div className="nested-menu">
-                    <p>Public Locations</p>
-                    <p>E-Commerce</p>
+                    <Link to="/public-locations">Public Locations</Link>
+                    <Link to="/ecommerce">E-Commerce</Link>
                   </div>
                 )}
               </div>
@@ -81,7 +81,7 @@ const Header = () => {
           {openMenu === "products" && (
             <div className="dropdown">
 
-              {/* Coffee Machines */}
+              {/* Machines */}
               <div className="nested" onClick={(e) => toggleSub("machines", e)}>
                 Coffee Machines ›
                 {openSubMenu === "machines" && (
@@ -100,12 +100,12 @@ const Header = () => {
                   <div className="nested-menu">
                     <Link to="/coffee-beans">Coffee Beans</Link>
                     <Link to="/coffee-powder">Coffee Powder</Link>
-                    <Link to="/pour-over">Pour Over Coffee</Link>
+                    <Link to="/pour-over-coffee">Pour Over Coffee</Link>
                   </div>
                 )}
               </div>
 
-              <p>Coffee Accessories</p>
+              <Link to="/coffee-accessories">Coffee Accessories</Link>
             </div>
           )}
         </div>
@@ -118,7 +118,7 @@ const Header = () => {
           {openMenu === "manufacturing" && (
             <div className="dropdown">
               <Link to="/factory">Our Factory</Link>
-              <p>Research & Development</p>
+              <Link to="/research-development">Research & Development</Link>
             </div>
           )}
         </div>
@@ -130,6 +130,7 @@ const Header = () => {
 };
 
 export default Header;
+
 
 
 

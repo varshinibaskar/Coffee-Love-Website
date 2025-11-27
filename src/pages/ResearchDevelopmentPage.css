@@ -1,0 +1,213 @@
+/* ---------------- RESEARCH & DEVELOPMENT PAGE ---------------- */
+.rd-page {
+  background-color: #2c1f1f;
+  color: #e6e6e6;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+/* ---------------- HERO BANNER ---------------- */
+.rd-hero-banner {
+  padding: 80px 5%;
+  background-color: #2c1f1f;
+}
+
+.rd-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #b87a5c;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.rd-hero-text {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rd-hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.rd-hero-text p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.rd-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------- CONTENT SECTIONS ---------------- */
+.rd-content-section {
+  padding: 80px 5%;
+  background-color: #2c1f1f;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.rd-section {
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #333;
+}
+
+.rd-section:last-child {
+  border-bottom: none;
+}
+
+.rd-section h2 {
+  font-size: 32px;
+  color: #d4b896;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.rd-section h3 {
+  font-size: 20px;
+  color: #d4b896;
+  text-align: center;
+  margin-bottom: 25px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.rd-section p {
+  font-size: 16px;
+  color: #e6e6e6;
+  line-height: 1.9;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ---------------- CONTACT SECTION ---------------- */
+.rd-contact-section {
+  padding: 80px 5%;
+  background-color: #131313;
+}
+
+.rd-contact-section h2 {
+  font-size: 36px;
+  color: #d4b896;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+.rd-contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rd-contact-form input,
+.rd-contact-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  color: #fff;
+  padding: 15px 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+}
+
+.rd-contact-form input::placeholder,
+.rd-contact-form textarea::placeholder {
+  color: #999;
+}
+
+.rd-contact-form input:focus,
+.rd-contact-form textarea:focus {
+  border-bottom-color: #d4a45a;
+  outline: none;
+}
+
+.rd-contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.rd-submit-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rd-submit-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+@media (max-width: 768px) {
+  .rd-hero-text h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+  
+  .rd-hero-text p {
+    font-size: 18px;
+  }
+  
+  .rd-section h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rd-hero-text {
+    padding: 30px;
+  }
+  
+  .rd-hero-text h1 {
+    font-size: 26px;
+  }
+  
+  .rd-hero-text p {
+    font-size: 16px;
+  }
+  
+  .rd-content-section {
+    padding: 50px 5%;
+  }
+  
+  .rd-section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .rd-section h2 {
+    font-size: 24px;
+  }
+  
+  .rd-section p {
+    font-size: 15px;
+  }
+}
