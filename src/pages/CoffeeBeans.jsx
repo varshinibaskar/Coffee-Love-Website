@@ -36,7 +36,7 @@ const CoffeeMachinesPage = () => {
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">ESPRESSO MACHINE</h3>
+            <h3 className="machine-name">ARABICA</h3>
           </div>
 
           <div className="machine-item">
@@ -47,7 +47,7 @@ const CoffeeMachinesPage = () => {
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+            <h3 className="machine-name">ROBUSTA</h3>
           </div>
         
         <div className="machine-item">
@@ -59,7 +59,7 @@ const CoffeeMachinesPage = () => {
             </div>
             </div>
 
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+            <h3 className="machine-name">LIBERICA</h3>
           </div>
 
           <div className="machine-item">
@@ -70,7 +70,7 @@ const CoffeeMachinesPage = () => {
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">COFFEE VENDING MACHINE</h3>
+            <h3 className="machine-name">EXCELSA</h3>
           </div>
         </div>
       </section>

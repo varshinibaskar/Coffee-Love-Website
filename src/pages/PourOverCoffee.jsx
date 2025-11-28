@@ -32,55 +32,55 @@ const CoffeeMachinesPage = () => {
             <div className="machine-image-box">
               <img src="/images/po1.png" alt="Espresso Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Pour-over coffee powder is a medium-ground coffee made for manual brewers like V60 or Kalita. It gives a clean, smooth, and aromatic cup by allowing water to flow evenly through the grounds. Perfect for highlighting natural flavors in the beans.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">ESPRESSO MACHINE</h3>
+            <h3 className="machine-name">LIGHT ROAST COFFEE POWDER</h3>
           </div>
 
           <div className="machine-item">
             <div className="machine-image-box">
               <img src="/images/po2.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Pour-over coffee powder is a medium-ground coffee made for manual brewers like V60 or Kalita. It gives a clean, smooth, and aromatic cup by allowing water to flow evenly through the grounds. Perfect for highlighting natural flavors in the beans.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+            <h3 className="machine-name">MEDIUM ROAST COFFEE POWDER</h3>
           </div>
         
         <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/03.png" alt="Filter Coffee Machine" />
+              <img src="/images/po3.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Pour-over coffee powder is a medium-ground coffee made for manual brewers like V60 or Kalita. It gives a clean, smooth, and aromatic cup by allowing water to flow evenly through the grounds. Perfect for highlighting natural flavors in the beans.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
 
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+            <h3 className="machine-name">MEDIUM DARK ROAST COFFEE POWDER</h3>
           </div>
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/04.png" alt="Filter Coffee Machine" />
+              <img src="/images/po4.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Pour-over coffee powder is a medium-ground coffee made for manual brewers like V60 or Kalita. It gives a clean, smooth, and aromatic cup by allowing water to flow evenly through the grounds. Perfect for highlighting natural flavors in the beans.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+            <h3 className="machine-name">SINGLE ORIGIN COFFEE POWDER</h3>
           </div>
 
           <div className="machine-item">
             <div className="machine-image-box">
-              <img src="/images/o5.png" alt="Coffee Vending Machine" />
+              <img src="/images/po5.png" alt="Coffee Vending Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Pour-over coffee powder is a medium-ground coffee made for manual brewers like V60 or Kalita. It gives a clean, smooth, and aromatic cup by allowing water to flow evenly through the grounds. Perfect for highlighting natural flavors in the beans.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">COFFEE VENDING MACHINE</h3>
+            <h3 className="machine-name">FRESHLY GROUND COFFEE POWDER</h3>
           </div>
         </div>
       </section>

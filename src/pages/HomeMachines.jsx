@@ -25,14 +25,14 @@ const CoffeeMachinesPage = () => {
       
       {/* Automatic Machines Section */}
       <section className="automatic-machines-section">
-        <h1 className="page-title">SEMI AUTOMATIC MACHINES</h1>
+        <h1 className="page-title">HOME MACHINES</h1>
 
         <div className="machines-grid">
           <div className="machine-item">
             <div className="machine-image-box">
               <img src="/images/hm1.png" alt="Espresso Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Home coffee machines make it easy to brew cafe-style drinks right in your kitchen, offering convenience for busy mornings and relaxed evenings. They come in different types—from drip makers to espresso and capsule machines—allowing users to choose the flavour, strength, and style they prefer.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
@@ -43,7 +43,7 @@ const CoffeeMachinesPage = () => {
             <div className="machine-image-box">
               <img src="/images/hm2.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Home coffee machines make it easy to brew cafe-style drinks right in your kitchen, offering convenience for busy mornings and relaxed evenings. They come in different types—from drip makers to espresso and capsule machines—allowing users to choose the flavour, strength, and style they prefer.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
@@ -54,7 +54,7 @@ const CoffeeMachinesPage = () => {
             <div className="machine-image-box">
               <img src="/images/hm3.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Home coffee machines make it easy to brew cafe-style drinks right in your kitchen, offering convenience for busy mornings and relaxed evenings. They come in different types—from drip makers to espresso and capsule machines—allowing users to choose the flavour, strength, and style they prefer.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
@@ -65,7 +65,7 @@ const CoffeeMachinesPage = () => {
             <div className="machine-image-box">
               <img src="/images/hm4.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Home coffee machines make it easy to brew cafe-style drinks right in your kitchen, offering convenience for busy mornings and relaxed evenings. They come in different types—from drip makers to espresso and capsule machines—allowing users to choose the flavour, strength, and style they prefer.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
@@ -76,7 +76,7 @@ const CoffeeMachinesPage = () => {
             <div className="machine-image-box">
               <img src="/images/hm5.png" alt="Coffee Vending Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Home coffee machines make it easy to brew cafe-style drinks right in your kitchen, offering convenience for busy mornings and relaxed evenings. They come in different types—from drip makers to espresso and capsule machines—allowing users to choose the flavour, strength, and style they prefer.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>

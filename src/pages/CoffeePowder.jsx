@@ -32,33 +32,33 @@ const CoffeeMachinesPage = () => {
             <div className="machine-image-box">
               <img src="/images/p1.png" alt="Espresso Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee powder is made from roasted, ground coffee beans that offer a strong aroma and rich flavour. It’s easy to use and perfect for quick brewing, giving you a fresh and satisfying cup anytime. It delivers consistent taste with every cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">ESPRESSO MACHINE</h3>
+            <h3 className="machine-name">CAPPUCCINO</h3>
           </div>
 
           <div className="machine-item">
             <div className="machine-image-box">
               <img src="/images/p2.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee powder is made from roasted, ground coffee beans that offer a strong aroma and rich flavour. It’s easy to use and perfect for quick brewing, giving you a fresh and satisfying cup anytime. It delivers consistent taste with every cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+            <h3 className="machine-name">ESPRESSO</h3>
           </div>
 
           <div className="machine-item">
             <div className="machine-image-box">
               <img src="/images/p3.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee powder is made from roasted, ground coffee beans that offer a strong aroma and rich flavour. It’s easy to use and perfect for quick brewing, giving you a fresh and satisfying cup anytime. It delivers consistent taste with every cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+            <h3 className="machine-name">BLACK COFFEE</h3>
           </div>
         
         
@@ -66,23 +66,23 @@ const CoffeeMachinesPage = () => {
             <div className="machine-image-box">
               <img src="/images/p4.png" alt="Filter Coffee Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee powder is made from roasted, ground coffee beans that offer a strong aroma and rich flavour. It’s easy to use and perfect for quick brewing, giving you a fresh and satisfying cup anytime. It delivers consistent taste with every cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
 
-            <h3 className="machine-name">FILTER COFFEE MACHINE</h3>
+            <h3 className="machine-name">AMERICANO</h3>
           </div>
 
           <div className="machine-item">
             <div className="machine-image-box">
               <img src="/images/p5.png" alt="Coffee Vending Machine" />
               <div className="machine-back">
-            <p className="machine-desc">Premium bean-to-cup machine designed to deliver cafe-quality espresso every time.Perfect for homes, offices, and small cafes seeking consistent flavor and effortless brewing.</p>
+            <p className="machine-desc">Coffee powder is made from roasted, ground coffee beans that offer a strong aroma and rich flavour. It’s easy to use and perfect for quick brewing, giving you a fresh and satisfying cup anytime. It delivers consistent taste with every cup.</p>
             <button className="order-btn">Order Now</button>
             </div>
             </div>
-            <h3 className="machine-name">COFFEE VENDING MACHINE</h3>
+            <h3 className="machine-name">MOCHA</h3>
           </div>
         </div>
       </section>
