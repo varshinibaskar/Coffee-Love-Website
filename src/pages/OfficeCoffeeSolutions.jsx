@@ -120,23 +120,6 @@ const OfficeCoffeeSolutions = () => {
       <section className="products-section">
         <h2 className="section-title">Explore Our Products</h2>
 
-        {/* ---------- Bean to Cup ---------- */}
-        <h3 className="sub-head">Bean to Cup</h3>
-        <div className="products-grid three-col">
-          <div className="product-card">
-            <img src="/images/b1.png" alt="" />
-            <p>MICROBAR</p>
-          </div>
-          <div className="product-card">
-            <img src="/images/b2.png" alt="" />
-            <p>PRIMEBAR</p>
-          </div>
-          <div className="product-card">
-            <img src="/images/b3.png" alt="" />
-            <p>BLACK & WHITE CLASSIC</p>
-          </div>
-        </div>
-
         {/* ---------- Powder to Cup ---------- */}
         <h3 className="sub-head">Powder to Cup</h3>
 
@@ -149,24 +132,6 @@ const OfficeCoffeeSolutions = () => {
           </ul>
 
           <img src="/images/pcc.png" className="powder-img" alt="" />
-        </div>
-
-        <h3 className="sub-head">Coffee Powders</h3>
-
-        <div className="products-grid three-col">
-          <div className="product-card">
-            <img src="/images/p1.png" alt="" />
-            <p>AWAKE 70:30</p>
-          </div>
-
-          <div className="product-card">
-            <img src="/images/p2.png" alt="" />
-            <p>AWAKE 80:20</p>
-          </div>
-        <div className="product-card">
-            <img src="/images/p3.png" alt="" />
-            <p>AWAKE 80:20</p>
-          </div>
         </div>
       </section>
 

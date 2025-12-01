@@ -19,6 +19,7 @@ import FoodServicesPage from "./pages/FoodServicesPage";
 import OfficeCoffeeSolutions from "./pages/OfficeCoffeeSolutions";
 import DirectToConsumer from "./pages/DirectToConsumer";
 import PublicLocation from "./pages/PublicLocation";
+import AboutUs from "./pages/AboutUs";
 
 export default function App() {
   return (
@@ -48,6 +49,8 @@ export default function App() {
           <Route path="/research-development" element={<ResearchDevelopmentPage />} />
 
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/about" element={<AboutUs />} />
+
         </Routes>
       </main>
 

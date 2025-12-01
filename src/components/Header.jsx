@@ -38,17 +38,7 @@ const Header = () => {
       <nav className="nav">
 
         {/* HOME */}
-        <div className="menu-item">
           <Link to="/">Home</Link>
-          <button className="arrow" onClick={(e) => toggleMain("home", e)}>▼</button>
-
-          {openMenu === "home" && (
-            <div className="dropdown">
-              <Link to="/about">About Us</Link>
-              <Link to="/what-we-do">What We Do</Link>
-            </div>
-          )}
-        </div>
 
         {/* BUSINESS */}
         <div className="menu-item">
@@ -124,8 +114,18 @@ const Header = () => {
             </div>
           )}
         </div>
-
+        
+        <div className="menu-item">
         <Link to="/contact-us" className="menu-item">Contact Us</Link>
+        <button className="arrow" onClick={(e) => toggleMain("contact-us", e)}>▼</button>
+
+          {openMenu === "contact-us" && (
+            <div className="dropdown">
+              <Link to="/about">About Us</Link>
+              <Link to="/what-we-do">What We Do</Link>
+            </div>
+          )}
+          </div>
       </nav>
     </header>
   );
